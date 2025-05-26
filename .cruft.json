@@ -1,0 +1,34 @@
+{
+  "template": "https://github.com/JoseRZapata/data-science-project-template",
+  "commit": "81d37953bd559d592bc90c6b5611a3c8601e8236",
+  "checkout": null,
+  "context": {
+    "cookiecutter": {
+      "project_name": "music-recommendation-system",
+      "repo_name": "music-recommendation-system",
+      "github_username": "1210lfo",
+      "author_name": "Luis Felipe Ospina",
+      "author_email": "https://www.linkedin.com/in/luis-felipe-ospina-giraldo/",
+      "description": "Este es un sistema de recomendación musical que utiliza datos en tiempo real de las plataformas Spotify y Deezer, aprovechando sus APIs para ofrecer sugerencias personalizadas basadas en géneros, artistas similares y características acústicas de las canciones. El objetivo del proyecto es aplicar técnicas de ciencia de datos para construir un motor de recomendaciones eficiente y atractivo, demostrando el potencial del análisis de datos en la industria del entretenimiento musical.",
+      "compatible_python_versions": "3.11",
+      "mkdocs": false,
+      "codecov": true,
+      "license": "MIT License",
+      "_copy_without_render": [
+        ".code_quality/*",
+        ".vscode/*",
+        "config/*",
+        "data/*",
+        "src/*",
+        "tests/*",
+        ".editorconfig",
+        ".pre-commit-config.yaml",
+        "codecov.yaml",
+        "docs/*"
+      ],
+      "_template": "https://github.com/JoseRZapata/data-science-project-template",
+      "_commit": "81d37953bd559d592bc90c6b5611a3c8601e8236"
+    }
+  },
+  "directory": null
+}

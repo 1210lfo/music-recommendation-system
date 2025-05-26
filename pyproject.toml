@@ -1,0 +1,51 @@
+[project]
+name = "music-recommendation-system"
+version = "0.1.0"
+description = "Este es un sistema de recomendación musical que utiliza datos en tiempo real de las plataformas Spotify y Deezer, aprovechando sus APIs para ofrecer sugerencias personalizadas basadas en géneros, artistas similares y características acústicas de las canciones. El objetivo del proyecto es aplicar técnicas de ciencia de datos para construir un motor de recomendaciones eficiente y atractivo, demostrando el potencial del análisis de datos en la industria del entretenimiento musical."
+authors = [
+    "Luis Felipe Ospina <https://www.linkedin.com/in/luis-felipe-ospina-giraldo/>",
+]
+requires-python = ">=3.11"
+readme = "README.md"
+
+dependencies = [
+
+]
+
+[project.urls]
+documentation = "https://1210lfo.github.io/music-recommendation-system"
+repository = "https://github.com/1210lfo/music-recommendation-system"
+
+
+[dependency-groups]
+dev = [
+    "pre-commit>=4.2.0", # Code linting and formatting
+    "pytest>=8.3.5", # Testing framework
+    "pytest-cookies>=0.7.0",
+    "pytest-cov>=6.1.1",
+    "cruft[pyproject]>=2.15.0",# Automated Cookiecutter template synchronization
+]
+
+#
+
+[tool.uv]
+package = false
+default-groups = [
+    "dev",
+#
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+
+[tool.coverage.paths]
+source = ["src/"]
+
+[tool.coverage.run]
+source = ["src"]
+omit = ["**/__init__.py"]
