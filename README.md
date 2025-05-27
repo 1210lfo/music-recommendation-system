@@ -1,4 +1,4 @@
-# AlgoRhythm 🎵🤖
+# AlgoRhythm 📻
 
 [![uv](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/uv/main/assets/badge/v0.json)](https://github.com/astral-sh/uv)
 [![Ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/charliermarsh/ruff/main/assets/badge/v2.json)](https://github.com/charliermarsh/ruff)
@@ -6,32 +6,32 @@
 [![security: bandit](https://img.shields.io/badge/security-bandit-yellow.svg)](https://github.com/PyCQA/bandit)
 [![Checked with mypy](https://www.mypy-lang.org/static/mypy_badge.svg)](https://mypy-lang.org/)
 
-## 🎯 Descripción
+## 🎯 Description
 
-**AlgoRhythm** es un sistema de recomendación musical desarrollado como proyecto final de la asignatura **Ciencia de Datos en Producción**. Este proyecto utiliza datos de streaming obtenidos a través de las APIs de **Spotify** y **Deezer** para ofrecer recomendaciones personalizadas de canciones.
+**AlgoRhythm** is a music recommendation system developed as the final project for the **Data Science in Production** course. This project leverages streaming data obtained via the **Spotify** and **Deezer** APIs to provide personalized music recommendations.
 
-La solución está basada en un enfoque de ingeniería de datos profesional que abarca desde la adquisición y procesamiento de datos hasta el entrenamiento, evaluación y despliegue de modelos de recomendación.
+The solution is built using a professional data engineering approach, covering the entire pipeline: from data acquisition and processing to training, evaluating, and deploying recommendation models.
 
-## ✨ Funcionalidades y herramientas
+## ✨ Features and Tools
 
-Herramientas utilizadas en este proyecto:
+Tools used in this project:
 
-| Funcionalidad                                   | Herramienta           | Justificación |
+| Feature                                         | Tool                  | Justification |
 |------------------------------------------------|------------------------|----------------|
-| Manejo de dependencias                         | [UV]                  | Entorno rápido y reproducible |
-| Configuración por archivos                     | [Hydra]               | Parametrización flexible |
-| Calidad de código (linting, imports)           | [Ruff]                | Código limpio y uniforme |
-| Tipado estático                                | [Mypy]                | Robustez y detección de errores |
-| Seguridad del código                           | [Bandit]              | Detección de vulnerabilidades |
-| Validaciones previas al commit                 | [Pre-commit]          | Mantener estándares de calidad |
-| Pruebas unitarias                              | [Pytest]              | Validación del comportamiento del sistema |
-| Cobertura de pruebas                           | [coverage.py] [Codecov] | Seguimiento del alcance de pruebas |
-| Plantilla de proyecto                          | [Cruft] / [Cookiecutter] | Estándar profesional en ciencia de datos |
-| Estructura profesional de datos                | [Data structure]      | Organización clara y escalable |
+| Dependency management                          | [UV]                  | Fast and reproducible environments |
+| Configuration management                       | [Hydra]               | Flexible parameter handling |
+| Code quality (linting, imports)                | [Ruff]                | Clean and consistent code |
+| Static type checking                           | [Mypy]                | Robustness and early error detection |
+| Code security                                  | [Bandit]              | Vulnerability detection |
+| Pre-commit validations                         | [Pre-commit]          | Maintain code quality standards |
+| Unit testing                                   | [Pytest]              | System behavior validation |
+| Test coverage tracking                         | [coverage.py] [Codecov] | Monitor test completeness |
+| Project templating                             | [Cruft] / [Cookiecutter] | Professional data science template |
+| Professional data structure                    | [Data structure]      | Clear and scalable project organization |
 
-## 🚀 Instalación del entorno
+## 🚀 Environment Setup
 
-1. Inicializa el repositorio:
+1. Initialize the Git repository:
 
     ```bash
     make init_git
