@@ -8,7 +8,24 @@
 
 ## 🎯 Description
 
-**AlgoRhythm** is a music recommendation system developed as the final project for the **Data Science in Production** course. This project leverages streaming data obtained via the **Spotify** and **Deezer** APIs to provide personalized music recommendations.
+# 🎵 AlgoRhythm
+
+**AlgoRhythm** is a music and album recommendation system based on the musical preferences of real or synthetic users. It uses Spotify's public API to extract real-time data and generate personalized suggestions. Developed as the final project for the **Data Science in Production** course.
+
+## 🚀 What does this project do?
+
+-   Builds user music profiles based on:
+    -   Favorite songs and albums (real from Spotify or simulated via surveys/synthetic data)
+    -   Ratings or popularity scores
+-   Extracts dynamic data from Spotify using its API:
+    -   Information about tracks, albums, and artists
+    -   Popular playlists such as the global or genre-specific Top 50
+-   Applies a content-based recommendation system:
+    -   Compares musical attributes (genre, popularity, artists) between favorite songs and songs in the charts
+    -   Uses clustering and similarity to suggest new music
+    -   Filters out songs the user already listens to
+-   Delivers personalized recommendations per user
+-   Includes visualizations to interpret musical profiles and recommendations
 
 The solution is built using a professional data engineering approach, covering the entire pipeline: from data acquisition and processing to training, evaluating, and deploying recommendation models.
 
@@ -16,18 +33,18 @@ The solution is built using a professional data engineering approach, covering t
 
 Tools used in this project:
 
-| Feature                                         | Tool                  | Justification |
-|------------------------------------------------|------------------------|----------------|
-| Dependency management                          | [UV]                  | Fast and reproducible environments |
-| Configuration management                       | [Hydra]               | Flexible parameter handling |
-| Code quality (linting, imports)                | [Ruff]                | Clean and consistent code |
-| Static type checking                           | [Mypy]                | Robustness and early error detection |
-| Code security                                  | [Bandit]              | Vulnerability detection |
-| Pre-commit validations                         | [Pre-commit]          | Maintain code quality standards |
-| Unit testing                                   | [Pytest]              | System behavior validation |
-| Test coverage tracking                         | [coverage.py] [Codecov] | Monitor test completeness |
-| Project templating                             | [Cruft] / [Cookiecutter] | Professional data science template |
-| Professional data structure                    | [Data structure]      | Clear and scalable project organization |
+| Feature                         | Tool                     | Justification                           |
+| ------------------------------- | ------------------------ | --------------------------------------- |
+| Dependency management           | [UV]                     | Fast and reproducible environments      |
+| Configuration management        | [Hydra]                  | Flexible parameter handling             |
+| Code quality (linting, imports) | [Ruff]                   | Clean and consistent code               |
+| Static type checking            | [Mypy]                   | Robustness and early error detection    |
+| Code security                   | [Bandit]                 | Vulnerability detection                 |
+| Pre-commit validations          | [Pre-commit]             | Maintain code quality standards         |
+| Unit testing                    | [Pytest]                 | System behavior validation              |
+| Test coverage tracking          | [coverage.py] [Codecov]  | Monitor test completeness               |
+| Project templating              | [Cruft] / [Cookiecutter] | Professional data science template      |
+| Professional data structure     | [Data structure]         | Clear and scalable project organization |
 
 ## 🚀 Environment Setup
 
@@ -65,8 +82,8 @@ uv add --group dev plotly
 
 ## 🗃️ Project structure
 
-- [Data structure]
-- [Pipelines based on Feature/Training/Inference Pipelines](https://www.hopsworks.ai/post/mlops-to-ml-systems-with-fti-pipelines)
+-   [Data structure]
+-   [Pipelines based on Feature/Training/Inference Pipelines](https://www.hopsworks.ai/post/mlops-to-ml-systems-with-fti-pipelines)
 
 ```bash
 .
@@ -133,16 +150,21 @@ uv add --group dev plotly
     └── settings.json                   # vscode settings
 ```
 
+## 👥 Authors
+
+-   Simón Correa Marín
+-   Luis Felipe Ospina Giraldo
+
 ## Credits
 
 This project was generated from [@JoseRZapata]'s [data science project template] template.
 
 ---
-[@JoseRZapata]: https://github.com/JoseRZapata
 
+[@JoseRZapata]: https://github.com/JoseRZapata
 [bandit]: https://github.com/PyCQA/bandit
 [codecov]: https://codecov.io/
-[Cookiecutter]:https://cookiecutter.readthedocs.io/en/stable/
+[Cookiecutter]: https://cookiecutter.readthedocs.io/en/stable/
 [coverage.py]: https://coverage.readthedocs.io/
 [Cruft]: https://cruft.github.io/cruft/
 [data science project template]: https://github.com/JoseRZapata/data-science-project-template

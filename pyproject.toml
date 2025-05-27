@@ -9,7 +9,10 @@ requires-python = ">=3.11"
 readme = "README.md"
 
 dependencies = [
-
+    "numpy>=2.2.6",
+    "pandas[parquet]>=2.2.3",
+    "scikit-learn>=1.6.1",
+    "scipy>=1.15.3",
 ]
 
 [project.urls]
@@ -23,7 +26,11 @@ dev = [
     "pytest>=8.3.5", # Testing framework
     "pytest-cookies>=0.7.0",
     "pytest-cov>=6.1.1",
-    "cruft[pyproject]>=2.15.0",# Automated Cookiecutter template synchronization
+    "cruft[pyproject]>=2.15.0", # Automated Cookiecutter template synchronization
+    "jupyter>=1.1.1",
+    "matplotlib>=3.10.3",
+    "seaborn>=0.13.2",
+    "plotly>=6.1.1",
 ]
 
 #
