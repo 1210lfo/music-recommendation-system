@@ -1,4 +1,4 @@
-# music-recommendation-system
+# AlgoRhythm 🎵🤖
 
 [![uv](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/uv/main/assets/badge/v0.json)](https://github.com/astral-sh/uv)
 [![Ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/charliermarsh/ruff/main/assets/badge/v2.json)](https://github.com/charliermarsh/ruff)
@@ -6,28 +6,32 @@
 [![security: bandit](https://img.shields.io/badge/security-bandit-yellow.svg)](https://github.com/PyCQA/bandit)
 [![Checked with mypy](https://www.mypy-lang.org/static/mypy_badge.svg)](https://mypy-lang.org/)
 
-## ✨ Features and Tools
+## 🎯 Descripción
 
-Information about all the features and tools used in this project: <https://joserzapata.github.io/data-science-project-template/#features-and-tools>
+**AlgoRhythm** es un sistema de recomendación musical desarrollado como proyecto final de la asignatura **Ciencia de Datos en Producción**. Este proyecto utiliza datos de streaming obtenidos a través de las APIs de **Spotify** y **Deezer** para ofrecer recomendaciones personalizadas de canciones.
 
-Features                                     | Package  | Why?
- ---                                         | ---      | ---
-Dependencies and env                         | [UV] | [article](https://astral.sh/blog/uv)
-Project configuration file                   | [Hydra]  |  [article](https://mathdatasimplified.com/2023/05/25/stop-hard-coding-in-a-data-science-project-use-configuration-files-instead/)
-Lint - Format, sort imports  (Code Quality)  | [Ruff] | [article](https://www.sicara.fr/blog-technique/boost-code-quality-ruff-linter)
-Static type checking                         | [Mypy] | [article](https://python.plainenglish.io/does-python-need-types-79753b88f521)
-code security                                | [bandit] | [article](https://blog.bytehackr.in/secure-your-python-code-with-bandit)
-Code quality & security each commit          | [pre-commit] | [article](https://dev.to/techishdeep/maximize-your-python-efficiency-with-pre-commit-a-complete-but-concise-guide-39a5)
-Test code                                    | [Pytest] | [article](https://realpython.com/pytest-python-testing/)
-Test coverage                                | [coverage.py] [codecov] | [article](https://martinxpn.medium.com/test-coverage-in-python-with-pytest-86-100-days-of-python-a3205c77296)
-Project Template                             | [Cruft] or [Cookiecutter] | [article](https://medium.com/@bctello8/standardizing-dbt-projects-at-scale-with-cookiecutter-and-cruft-20acc4dc3f74)
-Folder structure for data science projects   | [Data structure] | [article](https://towardsdatascience.com/the-importance-of-layered-thinking-in-data-engineering-a09f685edc71)
-Template for pull requests                   | [Pull Request template] | [article](https://www.awesomecodereviews.com/pull-request-template/)
-Template for notebooks                       | [Notebook template] |
+La solución está basada en un enfoque de ingeniería de datos profesional que abarca desde la adquisición y procesamiento de datos hasta el entrenamiento, evaluación y despliegue de modelos de recomendación.
 
-## Set up the environment
+## ✨ Funcionalidades y herramientas
 
-1. Initialize git in local:
+Herramientas utilizadas en este proyecto:
+
+| Funcionalidad                                   | Herramienta           | Justificación |
+|------------------------------------------------|------------------------|----------------|
+| Manejo de dependencias                         | [UV]                  | Entorno rápido y reproducible |
+| Configuración por archivos                     | [Hydra]               | Parametrización flexible |
+| Calidad de código (linting, imports)           | [Ruff]                | Código limpio y uniforme |
+| Tipado estático                                | [Mypy]                | Robustez y detección de errores |
+| Seguridad del código                           | [Bandit]              | Detección de vulnerabilidades |
+| Validaciones previas al commit                 | [Pre-commit]          | Mantener estándares de calidad |
+| Pruebas unitarias                              | [Pytest]              | Validación del comportamiento del sistema |
+| Cobertura de pruebas                           | [coverage.py] [Codecov] | Seguimiento del alcance de pruebas |
+| Plantilla de proyecto                          | [Cruft] / [Cookiecutter] | Estándar profesional en ciencia de datos |
+| Estructura profesional de datos                | [Data structure]      | Organización clara y escalable |
+
+## 🚀 Instalación del entorno
+
+1. Inicializa el repositorio:
 
     ```bash
     make init_git
@@ -145,9 +149,7 @@ This project was generated from [@JoseRZapata]'s [data science project template]
 [Data structure]: https://github.com/JoseRZapata/data-science-project-template/blob/main/music-recommendation-system/data/README.md
 [hydra]: https://hydra.cc/
 [Mypy]: http://mypy-lang.org/
-[Notebook template]: music-recommendation-system/notebooks/notebook_template.ipynb
 [pre-commit]: https://pre-commit.com/
-[Pull Request template]: music-recommendation-system/.github/pull_request_template.md
 [Pytest]: https://docs.pytest.org/en/latest/
 [Ruff]: https://docs.astral.sh/ruff/
 [UV]: https://docs.astral.sh/uv/
