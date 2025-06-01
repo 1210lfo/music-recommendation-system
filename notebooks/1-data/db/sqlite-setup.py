@@ -2,7 +2,7 @@ import os
 import sqlite3
 
 
-def create_database(db_path: str | None = "../../data/01_raw/algorhythms.db") -> None:
+def create_database(db_path: str | None = "../../data/01_raw/db/algorhythm.db") -> None:
     os.makedirs(os.path.dirname(db_path), exist_ok=True)
     conn = sqlite3.connect(db_path)
     conn.execute("PRAGMA foreign_keys = ON")  # Foreign keys
@@ -74,10 +74,11 @@ def create_database(db_path: str | None = "../../data/01_raw/algorhythms.db") ->
         track_id TEXT,
         name TEXT,
         artist_id TEXT,
+        artist_name TEXT,
         album_id TEXT,
+        album_name TEXT,
         popularity INTEGER,
         genres TEXT,
-        release_date DATE,
         chart_name TEXT,
         position INTEGER,
         added_at DATE,
