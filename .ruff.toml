@@ -1,0 +1,5 @@
+[lint]
+ignore = ["F821", "PLR2004", "PLR0913", "S608"]
+
+[lint.per-file-ignores]
+"notebooks/**/*.ipynb" = ["F821", "PLR2004", "PLR0913", "S608"]
